@@ -316,3 +316,13 @@ footer>img {
   height: 48px;
 }
 
+@media (min-width: 600px) and (max-width:1200px) {
+
+  .about-links {
+      display: none;
+    }
+
+    .project-section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
