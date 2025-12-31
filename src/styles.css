@@ -383,4 +383,20 @@ footer>img {
   .project-section {
     grid-template-columns: 1fr;
   }
+
+  footer {
+    align-items: center;
+    gap: 32px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info {
+    align-items: center;
+  }
+
+  .contact-icons {
+    justify-content: center;
+  }
+
 }
