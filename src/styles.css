@@ -399,4 +399,16 @@ footer>img {
     justify-content: center;
   }
 
+  header {
+    flex-direction: column;
+  }
+
+  .introduction {
+    text-align: center;
+  }
+
+  .about-links {
+    justify-content: center;
+  }
+
 }
