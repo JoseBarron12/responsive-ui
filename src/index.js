@@ -62,7 +62,7 @@ for(const proj of projects)
 
     const projImg = document.createElement("img");
     projImg.classList.add("project-image");
-    //projImg.src = proj.img;
+    projImg.src = proj.img;
     project.appendChild(projImg);
 
     const projDesc = document.createElement("div");

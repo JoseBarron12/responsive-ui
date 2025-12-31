@@ -66,7 +66,7 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
-  font-weight: 700;
+  font-weight: 100;
   font-family: 'Playfair Display';
 }
 
@@ -103,14 +103,21 @@ small {
   isolation: isolate;
 }
 
+:root {
+  --main-padding: 64px;
+  --header-image-size: 500px;
+  --shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 body {
     display: flex;
     flex-direction: column;
+    gap: 16px;
 }
 
 header {
     display: flex;
-    padding: 64px;
+    padding: var(--main-padding);
     position: relative;
 }
 
@@ -121,10 +128,10 @@ header {
 }
 
 .image-container>img {
-    width: 500px;
-    height: 500px;
+    width: var(--header-image-size);
+    height: var(--header-image-size);
     object-fit: cover;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--shadow);
 }
 
 h1.name {
@@ -140,7 +147,7 @@ h1.name {
 
 .introduction {
     background-color: white;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--shadow);
     margin: 32px 0px;
     padding: 32px;
     display: flex;
@@ -178,4 +185,67 @@ p.link-text {
   height: 100%;
   background-color: aquamarine;
   transform: translateY(-25%) skewY(-0.15rad);
+}
+
+main {
+  padding: var(--main-padding);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+h3.project-header {
+  font-size: 2.525rem;
+  font-weight: 100;
+}
+
+.project-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 500px;
+  gap: 32px;
+}
+
+.project {
+  display: grid;
+  grid-template-rows: 3fr 2fr;
+  box-shadow: var(--shadow);
+}
+
+img.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.project-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.project-info>p {
+  flex-grow: 1;
+  opacity: 80%;
 }
