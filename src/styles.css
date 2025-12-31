@@ -374,7 +374,13 @@ footer>img {
     align-items: center;
     gap: 32px;
   }
+}
+@media (max-width:600px) {
+  :root {
+    --main-padding: 32px;
+  }
 
-
-
+  .project-section {
+    grid-template-columns: 1fr;
+  }
 }
