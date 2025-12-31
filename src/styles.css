@@ -411,4 +411,8 @@ footer>img {
     justify-content: center;
   }
 
+  footer>img {
+    display: none;
+  }
+
 }
