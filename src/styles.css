@@ -107,12 +107,18 @@ small {
   --main-padding: 64px;
   --header-image-size: 500px;
   --shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  --text: #06060f;
+  --background: #f2f2fb;
+  --primary: #4549d1;
+  --secondary: #8385e8;
+  --accent: #4e52e9;
 }
 
 body {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    background-color: var(--background);
 }
 
 header {
@@ -141,12 +147,12 @@ h1.name {
     text-align: center;
     letter-spacing: 0px;
     font-weight: 100;
-    color: white;
+    color: var(--background);
     font-size: 4.5rem;
 }
 
 .introduction {
-    background-color: white;
+    background-color: var(--background);
     box-shadow: var(--shadow);
     margin: 32px 0px;
     padding: 32px;
@@ -183,8 +189,9 @@ p.link-text {
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: aquamarine;
+  background-color: var(--primary);
   transform: translateY(-25%) skewY(-0.15rad);
+  box-shadow: var(--shadow);
 }
 
 main {
@@ -213,6 +220,7 @@ h3.project-header, h5.contact-header, .introduction>h2 {
   display: grid;
   grid-template-rows: 3fr 2fr;
   box-shadow: var(--shadow);
+  background-color: var(--background);
 }
 
 img.project-image {
@@ -254,8 +262,8 @@ footer {
   padding: var(--main-padding);
   display: flex;
   gap: 64px;
-  background-color: aqua;
-  color: white;
+  background-color: var(--primary);
+  color: var(--background);
 }
 
 footer>img {
