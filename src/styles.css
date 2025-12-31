@@ -318,11 +318,32 @@ footer>img {
 
 @media (min-width: 600px) and (max-width:1200px) {
 
+  :root {
+    --header-image-size: 350px;
+  }
+
+  h1.name {
+    font-size: 4rem;
+  }
+
+  h3.project-header, h5.contact-header, .introduction>h2 {
+  font-size: 2.5rem;
+  }
+  
+  p, p.contact-desc, p.contact-address {
+    font-size: 0.9rem;
+  }
+  
+  .introduction>h2 {
+    text-align: center;
+  }
+
   .about-links {
       display: none;
     }
 
-    .project-section {
+  .project-section {
       grid-template-columns: repeat(2, 1fr);
-    }
+  }
+
 }
