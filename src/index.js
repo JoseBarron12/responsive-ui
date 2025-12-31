@@ -84,6 +84,8 @@ for(const proj of projects)
 
     const githubLink = document.createElement("a");
     githubLink.setAttribute("href", proj.githubLink);
+    githubLink.setAttribute("target", "_blank");
+    githubLink.setAttribute("rel", "noopener noreferrer");
     projIcons.appendChild(githubLink);
     
     const githubText = document.createElement("p");
@@ -98,6 +100,8 @@ for(const proj of projects)
 
     const liveLink = document.createElement("a");
     liveLink.setAttribute("href", proj.liveLink);
+    liveLink.setAttribute("target", "_blank");
+    liveLink.setAttribute("rel", "noopener noreferrer");
     projIcons.appendChild(liveLink);
     
     const liveText = document.createElement("p");
