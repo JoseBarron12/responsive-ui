@@ -405,14 +405,52 @@ footer>img {
 
   .introduction {
     text-align: center;
+    
   }
 
-  .about-links {
+  .about-links, h3.project-header {
     justify-content: center;
   }
 
   footer>img {
     display: none;
   }
+
+  h1.name {
+    font-size: 3.5rem;
+  }
+
+  h3.project-header, h5.contact-header, .introduction>h2 {
+  font-size: 2rem;
+  }
+  
+  p, p.contact-desc, p.contact-address {
+    font-size: 0.75rem;
+  }
+  
+  h4.project-title {
+    font-size: 1rem;
+  }
+
+  .contact-section {
+  gap: 16px;
+  }
+
+  .contact-desc {
+    margin-top: -4px;
+  }
+
+  .contact-info {
+    gap: 8px;
+  }
+
+  .contact-info>div {
+    gap: 8px;
+  }
+
+
+.contact-icons {
+  gap: 16px;
+}
 
 }
